@@ -1,0 +1,236 @@
+@import url(variavel.scss);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+$preto: black;
+$branco: #F7F7F7;
+$verdeClaro :MediumSpringGreen;
+$Vermelho: red;
+$pretoClaro: #3E3E91;
+
+body {
+    background-color: white;
+
+}
+
+header {
+
+
+    nav {
+
+        position: fixed;
+        background-color: $branco ;
+        width: 100%;
+
+        .logo {
+            position: absolute;
+            margin-top: 4%;
+            margin-left: 18%;
+            width: 5%;
+        }
+
+
+
+        .linkis {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+
+            padding: 3%;
+            color: $pretoClaro;
+            font-size: 18px;
+            text-decoration: none;
+
+
+        }
+
+        .criar-conta {
+            position: absolute;
+            margin-left: 68%;
+            color: $Vermelho;
+            cursor: pointer;
+        }
+
+        .button-entra {
+            position: absolute;
+            margin-left: 85%;
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 10%;
+            background-color: $Vermelho;
+
+        }
+
+        .text-entrar {
+            color: $branco ;
+        }
+    }
+}
+
+main {
+   
+
+    .conteudo-principal {
+
+
+        background-color: $branco ;
+        height: 50%;
+        width: 100%;
+
+        .textoh1 {
+            margin-bottom: 10%;
+            text-align: center;
+            font-size: 35px;
+
+        }
+
+        .textoh2 {
+            text-align: center;
+            @include  fontes-padrao;
+
+        }
+
+        p {
+
+            color: $pretoClaro;
+            text-align: center;
+            font-size: 15px;
+
+        }
+
+        .input-pesquisa {
+
+            margin-top: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            width: 38%;
+            height: 50px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10%;
+        }
+
+        .image-marcador {
+            margin-left: 30%;
+            width: 2%;
+
+        }
+
+        .input-pesquisa:focus {
+            outline: none;
+        }
+
+
+        #pesquisarbuntton {
+            font-weight: bold;
+            font-size: 15px;
+            color: #F7F7F7;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 10%;
+            background-color: $Vermelho;
+            cursor: pointer;
+
+        }
+
+
+    }
+
+}
+
+section{
+.container-vermelho {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 3%;
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20px;
+
+    .buntton-ver-opcao{
+        background-color: rgba(10, 10, 10, 0.274);
+        color: $branco;
+        width: 130px;
+        height: 30px;
+        border: none;
+        position: absolute;
+        margin-top: 38%;
+        margin-left: 5%;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .imagem-restaurante{
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+
+    .texto-Restaurante{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 8%;
+        color: #F7F7F7;
+   
+}
+
+}
+.container-vermelho:hover{
+    transform: scale(1.1);
+    transition: 500ms linear;
+}
+.container-verde{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 3%;
+    width: 400px;
+    height: 200px;
+    background-color: #B6D048;
+    border-radius: 20px;
+
+    .buntton-ver-opcao{
+        background-color: rgba(10, 10, 10, 0.274);
+        color: $branco;
+        width: 130px;
+        height: 30px;
+        border: none;
+        position: absolute;
+        margin-top: 38%;
+        margin-left: 5%;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .imagem-restaurante{
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+
+    .texto-Restaurante{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 8%;
+        color: #F7F7F7;
+   
+}
+
+}
+.container-verde:hover{
+    transform: scale(1.1);
+    transition: 500ms linear;
+}
+}
